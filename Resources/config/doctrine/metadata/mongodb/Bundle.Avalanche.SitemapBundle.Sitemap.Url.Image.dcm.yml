@@ -1,0 +1,13 @@
+Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image:
+    type: embeddedDocument
+    fields:
+        loc:
+            type: string
+        caption:
+            type: string
+        geoLocation:
+            type: string
+        title:
+            type: string
+        license:
+            type: string

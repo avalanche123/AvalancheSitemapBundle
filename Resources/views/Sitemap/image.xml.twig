@@ -1,0 +1,13 @@
+<image:loc>{{ image.loc|sm_absolutize }}</image:loc>
+{% if image.caption is defined %}
+<image:caption>{{ image.caption }}</image:caption>
+{% endif %}
+{% if image.geoLocation is defined %}
+<image:geo_location>{{ image.geoLocation }}</image:geo_location>
+{% endif %}
+{% if image.title is defined %}
+<image:title>{{ image.title }}</image:title>
+{% endif %}
+{% if image.license is defined %}
+<image:license>{{ image.license }}</image:license>
+{% endif %}

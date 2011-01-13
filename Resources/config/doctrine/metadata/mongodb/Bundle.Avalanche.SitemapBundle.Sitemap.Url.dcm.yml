@@ -1,0 +1,17 @@
+Bundle\Avalanche\SitemapBundle\Sitemap\Url:
+    type: document
+    repositoryClass: Bundle\Avalanche\SitemapBundle\Document\UrlRepository
+    fields:
+        loc:
+            id: true
+            type: id
+            strategy: none
+        lastmod:
+            type: date
+        changefreq:
+            type: string
+        priority:
+            type: string
+    embedMany:
+        images:
+            targetDocument: Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image

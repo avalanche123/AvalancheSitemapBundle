@@ -1,0 +1,9 @@
+sitemap:
+    pattern:  /sitemap.xml
+    defaults: { _controller: sitemap.controller:sitemap, _format: xml }
+    requirements: { _method: GET, _format: xml }
+
+siteindex:
+    pattern: /siteindex.xml
+    defaults: { _controller: sitemap.controller:siteindex, _format: xml }
+    requirements: { _method: GET, _format: xml }

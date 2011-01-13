@@ -1,0 +1,4 @@
+<loc>{{ url('sitemap', { 'page': page }) }}</loc>
+{% if sitemap.lastmod(page) %}
+<lastmod>sitemap.lastmod(page)|sm_format_date</lastmod>
+{% endif %}
