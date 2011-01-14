@@ -38,6 +38,16 @@ To enable the sitemap bundle, add it to you kernel registerBundles() method:
                 ...
             );
         }
+        ...
+
+        public function registerBundleDirs()
+        {
+            return array(
+                ...
+                'Bundle\\Avalanche' => __DIR__.'/../src/Bundle/Avalanche',
+                ...
+            );
+        }
     }
 
 # Enabling the services
