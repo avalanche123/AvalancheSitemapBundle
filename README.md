@@ -65,10 +65,10 @@ existing urls, e.g:
 
     namespace My\ForumBundle\Sitemap;
 
-    use Avalanche\Bundle\SitemapBundle\Sitemap\Provider;
-    use Avalanche\Bundle\SitemapBundle\Sitemap\Sitemap;
-    use Avalanche\Bundle\SitemapBundle\Sitemap\Sitemap\Url;
-    use Avalanche\Bundle\SitemapBundle\Sitemap\Sitemap\Url\Image;
+    use Bundle\Avalanche\SitemapBundle\Sitemap\Provider;
+    use Bundle\Avalanche\SitemapBundle\Sitemap\Sitemap;
+    use Bundle\Avalanche\SitemapBundle\Sitemap\Sitemap\Url;
+    use Bundle\Avalanche\SitemapBundle\Sitemap\Sitemap\Url\Image;
     use Symfony\Component\Routing\Router;
     use My\ForumBundle\Document\TopicRepository;
 
