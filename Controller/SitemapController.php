@@ -3,7 +3,7 @@
 namespace Bundle\Avalanche\SitemapBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Bundle\FrameworkBundle\Templating\Engine;
+use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Bundle\Avalanche\SitemapBundle\Sitemap;
 
 class SitemapController
@@ -12,7 +12,7 @@ class SitemapController
     private $templating;
     private $request;
 
-    public function __construct(Sitemap $sitemap, Engine $templating, Request $request)
+    public function __construct(Sitemap $sitemap, EngineInterface $templating, Request $request)
     {
         $this->sitemap    = $sitemap;
         $this->templating = $templating;
@@ -25,14 +25,14 @@ class SitemapController
 
         $this->sitemap->setPage($page);
 
-        return $this->templating->renderResponse('SitemapBundle:Sitemap:sitemap.xml.twig', array(
+        return $this->templating->renderResponse('AvalancheSitemapBundle:Sitemap:sitemap.twig.xml', array(
             'sitemap' => $this->sitemap
         ));
     }
 
     public function siteindex()
     {
-        return $this->templating->renderResponse('SitemapBundle:Sitemap:siteindex.xml.twig', array(
+        return $this->templating->renderResponse('AvalancheSitemapBundle:Sitemap:siteindex.twig.xml', array(
             'pages' => $this->sitemap->pages()
         ));
     }
