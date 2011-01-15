@@ -34,7 +34,7 @@ To enable the sitemap bundle, add it to you kernel registerBundles() method:
         public function registerBundles() {
             return array(
                 ...
-                new Bundle\SitemapBundle\SitemapBundle(),
+                new Bundle\Avalanche\SitemapBundle\AvalancheSitemapBundle(),
                 ...
             );
         }
