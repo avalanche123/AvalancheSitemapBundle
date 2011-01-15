@@ -20,7 +20,7 @@ The most common way to install a Bundle is by adding it as a submodule to your e
 
 From the root directory of your Symfony2 application issue the following commands:
     $> mkdir src/Bundle/Avalanche
-    $> mdfir src/Bundle/Avalanche/SitemapBundle
+    $> mkdir src/Bundle/Avalanche/SitemapBundle
     $> git submodule add git://github.com/avalanche123/AvalancheSitemapBundle.git src/Bundle/Avalanche/SitemapBundle
 
 # Adding bundle to Kernel
