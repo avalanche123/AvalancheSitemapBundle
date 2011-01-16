@@ -29,7 +29,9 @@ class UrlRepository extends DocumentRepository implements UrlRepositoryInterface
     public function findOneByLoc($loc)
     {
         $url = $this->findOneBy(array('loc' => $loc));
-        $this->scheduleForCleanup($url);
+        if (null !== $url) {
+            $this->scheduleForCleanup($url);
+        }
         return $url;
     }
 
