@@ -73,4 +73,9 @@ class Url implements Locatable
     {
         return $this->images;
     }
+
+    public function clear()
+    {
+        $this->images->clear();
+    }
 }
