@@ -50,6 +50,14 @@ To enable the sitemap bundle, add it to you kernel registerBundles() method:
         }
     }
 
+# Unique indexes
+
+Each entry in a sitemap (url or image) must have a unique loc attribute.
+AvalancheSitemapBundle defines indexes in the doctrine odm metadata for url class.
+To create them in your mongodb database, run the following command:
+
+    $> app/console doctrine:mongodb:schema:create --index
+
 # Enabling the services
 
 The second step is to enable its DependencyInjection extension in your
