@@ -1,6 +1,10 @@
 Bundle\Avalanche\SitemapBundle\Sitemap\Url:
     type: document
     repositoryClass: Bundle\Avalanche\SitemapBundle\Document\UrlRepository
+    indexes:
+        - { keys: { loc: 1}, options: { unique: 1 } }
+        - { keys: { lastmod: 1}, options: {} }
+        - { keys: { images.loc: 1 }, options: { unique: 1 } }
     fields:
         id:
             id: true
