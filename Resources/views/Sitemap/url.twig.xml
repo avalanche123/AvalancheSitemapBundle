@@ -8,8 +8,10 @@
 {% if url.priority is defined %}
 <priority>{{ url.priority }}</priority>
 {% endif %}
+{% if url.images is defined %}
 {% for image in url.images %}
 <image:image>
     {% include "AvalancheSitemapBundle:Sitemap:image.twig.xml" with { 'image': image } %}
 </image:image>
 {% endfor %}
+{% endif %}
