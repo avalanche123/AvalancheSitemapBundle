@@ -9,6 +9,7 @@ use Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image;
 
 class Url implements Locatable
 {
+    private $id;
     private $loc;
     private $lastmod;
     private $changefreq;
@@ -22,6 +23,11 @@ class Url implements Locatable
         $this->changefreq = $changefreq;
         $this->priority   = $priority;
         $this->images     = $images ? $images : new ArrayCollection();
+    }
+
+    public function getId()
+    {
+        return $this->id;
     }
 
     public function getLoc()

@@ -2,10 +2,12 @@ Bundle\Avalanche\SitemapBundle\Sitemap\Url:
     type: document
     repositoryClass: Bundle\Avalanche\SitemapBundle\Document\UrlRepository
     fields:
-        loc:
+        id:
             id: true
             type: id
-            strategy: none
+            strategy: auto
+        loc:
+            type: string
         lastmod:
             type: date
         changefreq:

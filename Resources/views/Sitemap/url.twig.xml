@@ -1,4 +1,4 @@
-<loc>{{ url._id|sm_absolutize }}</loc>
+<loc>{{ url.loc|sm_absolutize }}</loc>
 {% if url.lastmod is defined %}
 <lastmod>{{ url.lastmod|sm_format_date }}</lastmod>
 {% endif %}
