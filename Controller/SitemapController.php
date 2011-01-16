@@ -33,7 +33,8 @@ class SitemapController
     public function siteindex()
     {
         return $this->templating->renderResponse('AvalancheSitemapBundle:Sitemap:siteindex.twig.xml', array(
-            'pages' => $this->sitemap->pages()
+            'pages'   => $this->sitemap->pages(),
+            'sitemap' => $this->sitemap,
         ));
     }
 }
