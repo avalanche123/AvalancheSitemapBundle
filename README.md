@@ -159,7 +159,7 @@ Creating/updating urls from web is as easy as from cli:
 The last and most important step is to enable sitemap routing in your routing.yml:
 
     _sitemap:
-      resource: SitemapBundle/Resources/config/routing.yml
+      resource: Avalanche/SitemapBundle/Resources/config/routing.yml
 
 After that is done, you can access your sitemap at /sitemap.xml and siteindex at /siteindex.xml
 
