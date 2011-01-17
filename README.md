@@ -16,7 +16,7 @@ register sitemap documents metadata:
 
 # Installation as a submodule
 
-The most common way to install a Bundle is by adding it as a submodule to your existing project. This setup will let you update the Bundle with ease in the future. 
+The most common way to install a Bundle is by adding it as a submodule to your existing project. This setup will let you update the Bundle with ease in the future.
 
 From the root directory of your Symfony2 application issue the following commands:
     $> mkdir src/Bundle/Avalanche
@@ -108,16 +108,16 @@ existing urls, e.g:
                 $url->setLastmod($topic->getUpdateAt());
                 $url->setChangefreq('daily');
                 $url->setPriority('0.4');
-                
+
                 foreach ($topic->getAttachedImages() as $attachedImage) {
                     $image = new Image($this->router->generate('topic_image_view', array('id' => $attachedImage->getId())));
                     $image->setCaption($attachedImage->getCaption());
                     $image->setTitle($attachedImage->getTitle());
                     $image->setLicense('http://creativecommons.org/licenses/by/3.0/legalcode');
-                    
+
                     $url->add($image);
                 }
-                
+
                 $sitemap->add($url);
             }
         }
@@ -149,7 +149,7 @@ Creating/updating urls from web is as easy as from cli:
 
     $url = $this->sitemap->get('/topics/1');
     $url->setLastmod(new \DateTime());
-    
+
     $this->sitemap->add(new Url('http://www.google.com'));
 
     $this->sitemap->save();
