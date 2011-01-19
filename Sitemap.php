@@ -2,7 +2,6 @@
 
 namespace Bundle\Avalanche\SitemapBundle;
 
-
 use Bundle\Avalanche\SitemapBundle\Sitemap\Url;
 use Bundle\Avalanche\SitemapBundle\Sitemap\UrlRepositoryInterface;
 

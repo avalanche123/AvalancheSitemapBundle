@@ -11,6 +11,7 @@
         <parameter key="sitemap.mongodb.collection">%kernel.name%_urls</parameter>
         <parameter key="sitemap.mongodb.database">sitemap</parameter>
         <parameter key="sitemap.twig.extension.class">Bundle\Avalanche\SitemapBundle\Templating\SitemapExtension</parameter>
+        <parameter key="sitemap.provider.chain.class">Bundle\Avalanche\SitemapBundle\Sitemap\ProviderChain</parameter>
     </parameters>
 
     <services>
@@ -36,10 +37,12 @@
         <service id="sitemap.twig.extension" class="%sitemap.twig.extension.class%">
             <tag name="twig.extension" />
             <argument type="service" id="request"></argument>
-        </service><!--
-        
+        </service>
+<!--
         <service id="sitemap.provider.test" class="Bundle\Avalanche\SitemapBundle\Service\SitemapProvider">
             <tag name="sitemap.provider" />
         </service>
-    --></services>
+-->
+        <service id="sitemap.provider.chain" class="%sitemap.provider.chain.class%" />
+    </services>
 </container>
