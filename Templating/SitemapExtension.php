@@ -8,17 +8,21 @@ class SitemapExtension extends \Twig_Extension
 {
     private $request;
 
-    public function __construct(Request $request)
+    public function __construct(Request $request = null)
     {
         $this->request = $request;
     }
 
     public function getFilters()
     {
-        return array(
-            'sm_absolutize' => new \Twig_Filter_Method($this, 'getAbsoluteUrl'),
-            'sm_format_date' => new \Twig_Filter_Method($this, 'getFormattedDate'),
-        );
+        if (isset($this->request)) {
+            return array(
+                'sm_absolutize' => new \Twig_Filter_Method($this, 'getAbsoluteUrl'),
+                'sm_format_date' => new \Twig_Filter_Method($this, 'getFormattedDate'),
+            );
+        }
+
+        return parent::getFilters();
     }
 
     public function getAbsoluteUrl($path)
