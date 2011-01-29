@@ -4,7 +4,7 @@ Bundle\Avalanche\SitemapBundle\Sitemap\Url:
     indexes:
         - { keys: { loc: 1}, options: { unique: 1 } }
         - { keys: { lastmod: 1}, options: {} }
-        - { keys: { images.loc: 1 }, options: { unique: 1 } }
+        - { keys: { images.loc: 1 }, options: {} }
     fields:
         id:
             id: true
