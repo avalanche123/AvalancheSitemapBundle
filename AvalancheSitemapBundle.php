@@ -14,4 +14,20 @@ class AvalancheSitemapBundle extends Bundle
 
         $container->addCompilerPass(new AddProvidersToChainPass());
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getNamespace()
+    {
+        return __NAMESPACE__;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getPath()
+    {
+        return strtr(__DIR__, '\\', '/');
+    }
 }
