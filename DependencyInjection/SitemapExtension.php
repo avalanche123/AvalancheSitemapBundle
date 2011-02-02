@@ -8,7 +8,14 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
 class SitemapExtension extends Extension
 {
-    public function configLoad(array $config = null, ContainerBuilder $container)
+    public function configLoad(array $configs, ContainerBuilder $container)
+    {
+        foreach ($configs as $config) {
+            $this->doConfigLoad($config, $container);
+        }
+    }
+
+    public function doConfigLoad(array $config, ContainerBuilder $container)
     {
         if ( ! $container->hasDefinition('sitemap.controller')) {
             $loader = new XmlFileLoader($container, __DIR__.'/../Resources/config');
