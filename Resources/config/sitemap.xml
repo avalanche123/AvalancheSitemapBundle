@@ -24,6 +24,7 @@
             <argument type="service" id="request"></argument>
         </service>
         <service id="sitemap.url.repository"
+                class="Bundle\Avalanche\SitemapBundle\Document\UrlRepository"
                 factory-service="doctrine.odm.mongodb.document_manager"
                 factory-method="getRepository">
             <argument>%sitemap.url.class%</argument>
