@@ -18,7 +18,7 @@
         <service id="sitemap" class="%sitemap.class%">
             <argument type="service" id="sitemap.url.repository"></argument>
         </service>
-        <service id="sitemap.controller" class="%sitemap.controller.class%">
+        <service id="sitemap.controller" class="%sitemap.controller.class%" scope="request">
             <argument type="service" id="sitemap"></argument>
             <argument type="service" id="templating"></argument>
             <argument type="service" id="request"></argument>
