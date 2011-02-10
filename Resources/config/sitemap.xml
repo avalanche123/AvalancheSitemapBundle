@@ -37,7 +37,7 @@
         </service>
         <service id="sitemap.twig.extension" class="%sitemap.twig.extension.class%">
             <tag name="twig.extension" />
-            <argument type="service" id="request" strict="false"></argument>
+            <argument>%sitemap.base_url%</argument>
         </service>
 <!--
         <service id="sitemap.provider.test" class="Bundle\Avalanche\SitemapBundle\Service\SitemapProvider">

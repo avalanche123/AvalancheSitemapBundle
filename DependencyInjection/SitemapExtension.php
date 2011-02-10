@@ -5,6 +5,7 @@ namespace Bundle\Avalanche\SitemapBundle\DependencyInjection;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use InvalidArgumentException;
 
 class SitemapExtension extends Extension
 {
@@ -12,6 +13,10 @@ class SitemapExtension extends Extension
     {
         foreach ($configs as $config) {
             $this->doConfigLoad($config, $container);
+        }
+
+        if(!$container->hasParameter('sitemap.base_url')) {
+            throw new InvalidArgumentException('Please provide a base_url in the sitemap configuration');
         }
     }
 
@@ -26,6 +31,10 @@ class SitemapExtension extends Extension
             if (isset($config[$key])) {
                 $container->setParameter(sprintf("sitemap.mongodb.%s", $key), $config[$key]);
             }
+        }
+
+        if(isset($config['base_url'])) {
+            $container->setParameter('sitemap.base_url', $config['base_url']);
         }
     }
 

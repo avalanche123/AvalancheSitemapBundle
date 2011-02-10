@@ -63,11 +63,13 @@ To create them in your mongodb database, run the following command:
 The second step is to enable its DependencyInjection extension in your
 config.yml:
 
-    sitemap.config: ~
+    sitemap.config:
+        base_url: "http://mywebsite.com/"
 
 To store urls in a custom collection or database, use the following:
 
     sitemap.config:
+        base_url: "http://mywebsite.com/"
         database: some_database
         collection: urls
 
