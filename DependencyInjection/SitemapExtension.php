@@ -3,6 +3,7 @@
 namespace Bundle\Avalanche\SitemapBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\FileLocator;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use InvalidArgumentException;
@@ -23,7 +24,7 @@ class SitemapExtension extends Extension
     public function doConfigLoad(array $config, ContainerBuilder $container)
     {
         if ( ! $container->hasDefinition('sitemap.controller')) {
-            $loader = new XmlFileLoader($container, __DIR__.'/../Resources/config');
+            $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
             $loader->load('sitemap.xml');
         }
 
