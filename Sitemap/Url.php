@@ -16,6 +16,14 @@ class Url implements Locatable
     private $priority;
     private $images;
 
+    const ALWAYS = 'always';
+    const HOURLY = 'hourly';
+    const DAILY = 'daily';
+    const WEEKLY = 'weekly';
+    const MONTHLY = 'monthly';
+    const YEARLY = 'yearly';
+    const NEVER = 'never';
+
     public function __construct($loc, \DateTime $lastmod = null, $changefreq = null, $priority = null, Collection $images = null)
     {
         $this->loc        = $loc;
