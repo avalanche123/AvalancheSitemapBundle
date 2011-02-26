@@ -21,8 +21,6 @@ class GenerateCommand extends Command
 
         $this->container->get('sitemap.provider.chain')->populate($sitemap);
 
-        $sitemap->save();
-
-        $output->write('<info>Sitemap was sucessfully saved!</info>', true);
+        $output->write('<info>Sitemap was sucessfully populated!</info>', true);
     }
 }
