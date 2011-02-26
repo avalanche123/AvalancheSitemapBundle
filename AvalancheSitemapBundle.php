@@ -8,9 +8,9 @@ use Bundle\Avalanche\SitemapBundle\DependencyInjection\Compiler\AddProvidersToCh
 
 class AvalancheSitemapBundle extends Bundle
 {
-    public function registerExtensions(ContainerBuilder $container)
+    public function build(ContainerBuilder $container)
     {
-        parent::registerExtensions($container);
+        parent::build($container);
 
         $container->addCompilerPass(new AddProvidersToChainPass());
     }
