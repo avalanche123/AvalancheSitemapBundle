@@ -122,6 +122,8 @@ existing urls, e.g:
 
                 $sitemap->add($url);
             }
+
+            $sitemap->save();
         }
     }
 

@@ -16,7 +16,7 @@ class ProviderChain implements Provider
     public function populate(Sitemap $sitemap)
     {
         foreach ($this->providers as $provider) {
-            $provider->populates($sitemap);
+            $provider->populate($sitemap);
         }
     }
 }
