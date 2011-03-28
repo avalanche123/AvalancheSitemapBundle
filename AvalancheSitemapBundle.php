@@ -1,10 +1,10 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle;
+namespace Avalanche\Bundle\SitemapBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Bundle\Avalanche\SitemapBundle\DependencyInjection\Compiler\AddProvidersToChainPass;
+use Avalanche\Bundle\SitemapBundle\DependencyInjection\Compiler\AddProvidersToChainPass;
 
 class AvalancheSitemapBundle extends Bundle
 {

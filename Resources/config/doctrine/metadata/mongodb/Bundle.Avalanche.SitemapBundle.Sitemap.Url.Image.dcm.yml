@@ -1,4 +1,4 @@
-Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image:
+Avalanche\Bundle\SitemapBundle\Sitemap\Url\Image:
     type: embeddedDocument
     fields:
         loc:

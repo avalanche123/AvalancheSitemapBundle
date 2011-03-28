@@ -1,11 +1,11 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Service;
+namespace Avalanche\Bundle\SitemapBundle\Service;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Provider;
+use Avalanche\Bundle\SitemapBundle\Sitemap;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url\Image;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Provider;
 
 class SitemapProvider implements Provider
 {

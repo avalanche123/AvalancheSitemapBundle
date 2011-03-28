@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Sitemap;
+namespace Avalanche\Bundle\SitemapBundle\Sitemap;
 
 interface UrlRepositoryInterface
 {

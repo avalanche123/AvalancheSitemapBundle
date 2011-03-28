@@ -1,8 +1,8 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Sitemap\Url;
+namespace Avalanche\Bundle\SitemapBundle\Sitemap\Url;
 
-use Bundle\Avalanche\SitemapBundle\Locatable;
+use Avalanche\Bundle\SitemapBundle\Locatable;
 
 class Image implements Locatable
 {

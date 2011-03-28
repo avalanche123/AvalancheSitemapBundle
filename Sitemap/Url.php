@@ -1,11 +1,11 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Sitemap;
+namespace Avalanche\Bundle\SitemapBundle\Sitemap;
 
 use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
-use Bundle\Avalanche\SitemapBundle\Locatable;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image;
+use Avalanche\Bundle\SitemapBundle\Locatable;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url\Image;
 
 class Url implements Locatable
 {

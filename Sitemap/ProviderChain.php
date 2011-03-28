@@ -1,8 +1,8 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Sitemap;
+namespace Avalanche\Bundle\SitemapBundle\Sitemap;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap;
+use Avalanche\Bundle\SitemapBundle\Sitemap;
 
 class ProviderChain implements Provider
 {

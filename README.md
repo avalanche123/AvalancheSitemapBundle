@@ -12,7 +12,7 @@ register sitemap documents metadata:
             # other bundles mapping and etc.
             SitemapBundle:
                 type: yml
-                prefix: Bundle\Avalanche\SitemapBundle\Sitemap
+                prefix: Avalanche\Bundle\SitemapBundle\Sitemap
 
 # Installation as a submodule
 
@@ -34,7 +34,7 @@ To enable the sitemap bundle, add it to you kernel registerBundles() method:
         public function registerBundles() {
             return array(
                 ...
-                new Bundle\Avalanche\SitemapBundle\AvalancheSitemapBundle(),
+                new Avalanche\Bundle\SitemapAvalanche\BundleSitemapBundle(),
                 ...
             );
         }
@@ -44,7 +44,7 @@ To enable the sitemap bundle, add it to you kernel registerBundles() method:
         {
             return array(
                 ...
-                'Bundle\\Avalanche' => __DIR__.'/../src/Bundle/Avalanche',
+                'Avalanche' => __DIR__.'/../src/Avalanche',
                 ...
             );
         }
@@ -85,10 +85,10 @@ existing urls, e.g:
 
     namespace My\ForumBundle\Sitemap;
 
-    use Bundle\Avalanche\SitemapBundle\Sitemap\Provider;
-    use Bundle\Avalanche\SitemapBundle\Sitemap\Sitemap;
-    use Bundle\Avalanche\SitemapBundle\Sitemap\Sitemap\Url;
-    use Bundle\Avalanche\SitemapBundle\Sitemap\Sitemap\Url\Image;
+    use Avalanche\Bundle\SitemapBundle\Sitemap\Provider;
+    use Avalanche\Bundle\SitemapBundle\Sitemap\Sitemap;
+    use Avalanche\Bundle\SitemapBundle\Sitemap\Sitemap\Url;
+    use Avalanche\Bundle\SitemapBundle\Sitemap\Sitemap\Url\Image;
     use Symfony\Component\Routing\Router;
     use My\ForumBundle\Document\TopicRepository;
 

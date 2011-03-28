@@ -4,14 +4,14 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="sitemap.class">Bundle\Avalanche\SitemapBundle\Sitemap</parameter>
-        <parameter key="sitemap.controller.class">Bundle\Avalanche\SitemapBundle\Controller\SitemapController</parameter>
-        <parameter key="sitemap.url.class">Bundle\Avalanche\SitemapBundle\Sitemap\Url</parameter>
-        <parameter key="sitemap.url.mapper.class">Bundle\Avalanche\SitemapBundle\Document\MetadataMapper</parameter>
+        <parameter key="sitemap.class">Avalanche\Bundle\SitemapBundle\Sitemap</parameter>
+        <parameter key="sitemap.controller.class">Avalanche\Bundle\SitemapBundle\Controller\SitemapController</parameter>
+        <parameter key="sitemap.url.class">Avalanche\Bundle\SitemapBundle\Sitemap\Url</parameter>
+        <parameter key="sitemap.url.mapper.class">Avalanche\Bundle\SitemapBundle\Document\MetadataMapper</parameter>
         <parameter key="sitemap.mongodb.collection">%kernel.name%_urls</parameter>
         <parameter key="sitemap.mongodb.database">sitemap</parameter>
-        <parameter key="sitemap.twig.extension.class">Bundle\Avalanche\SitemapBundle\Templating\SitemapExtension</parameter>
-        <parameter key="sitemap.provider.chain.class">Bundle\Avalanche\SitemapBundle\Sitemap\ProviderChain</parameter>
+        <parameter key="sitemap.twig.extension.class">Avalanche\Bundle\SitemapBundle\Templating\SitemapExtension</parameter>
+        <parameter key="sitemap.provider.chain.class">Avalanche\Bundle\SitemapBundle\Sitemap\ProviderChain</parameter>
     </parameters>
 
     <services>
@@ -24,7 +24,7 @@
             <argument type="service" id="request"></argument>
         </service>
         <service id="sitemap.url.repository"
-                class="Bundle\Avalanche\SitemapBundle\Document\UrlRepository"
+                class="Avalanche\Bundle\SitemapBundle\Document\UrlRepository"
                 factory-service="doctrine.odm.mongodb.document_manager"
                 factory-method="getRepository">
             <argument>%sitemap.url.class%</argument>
@@ -40,7 +40,7 @@
             <argument>%sitemap.base_url%</argument>
         </service>
 <!--
-        <service id="sitemap.provider.test" class="Bundle\Avalanche\SitemapBundle\Service\SitemapProvider">
+        <service id="sitemap.provider.test" class="Avalanche\Bundle\SitemapBundle\Service\SitemapProvider">
             <tag name="sitemap.provider" />
         </service>
 -->

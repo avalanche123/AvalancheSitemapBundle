@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Document;
+namespace Avalanche\Bundle\SitemapBundle\Document;
 
 use Doctrine\ODM\MongoDB\Event\LoadClassMetadataEventArgs;
 

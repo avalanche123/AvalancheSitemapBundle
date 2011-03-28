@@ -1,10 +1,10 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Tests\Sitemap;
+namespace Avalanche\Bundle\SitemapBundle\Tests\Sitemap;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url\Image;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url;
 
 use Doctrine\Common\Collections\ArrayCollection;
 

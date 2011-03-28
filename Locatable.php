@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle;
+namespace Avalanche\Bundle\SitemapBundle;
 
 interface Locatable
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\DependencyInjection;
+namespace Avalanche\Bundle\SitemapBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

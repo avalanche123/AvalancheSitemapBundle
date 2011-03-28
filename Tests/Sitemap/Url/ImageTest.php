@@ -1,8 +1,8 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Tests\Sitemap\Url;
+namespace Avalanche\Bundle\SitemapBundle\Tests\Sitemap\Url;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url\Image;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url\Image;
 
 class ImageTest extends \PHPUnit_Framework_TestCase
 {

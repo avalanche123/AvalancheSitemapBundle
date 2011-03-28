@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Templating;
+namespace Avalanche\Bundle\SitemapBundle\Templating;
 
 use InvalidArgumentException;
 

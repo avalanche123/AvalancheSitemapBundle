@@ -1,9 +1,9 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle;
+namespace Avalanche\Bundle\SitemapBundle;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url;
-use Bundle\Avalanche\SitemapBundle\Sitemap\UrlRepositoryInterface;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url;
+use Avalanche\Bundle\SitemapBundle\Sitemap\UrlRepositoryInterface;
 
 class Sitemap
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Tests;
+namespace Avalanche\Bundle\SitemapBundle\Tests;
 
-use Bundle\Avalanche\SitemapBundle\Sitemap;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url;
+use Avalanche\Bundle\SitemapBundle\Sitemap;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url;
 
 class SitemapTest extends \PHPUnit_Framework_TestCase
 {
@@ -78,6 +78,6 @@ class SitemapTest extends \PHPUnit_Framework_TestCase
 
     private function getMockUrlRepository()
     {
-        return $this->getMock('Bundle\Avalanche\SitemapBundle\Sitemap\UrlRepositoryInterface');
+        return $this->getMock('Avalanche\Bundle\SitemapBundle\Sitemap\UrlRepositoryInterface');
     }
 }

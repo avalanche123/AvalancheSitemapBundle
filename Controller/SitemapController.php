@@ -1,10 +1,10 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Controller;
+namespace Avalanche\Bundle\SitemapBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
-use Bundle\Avalanche\SitemapBundle\Sitemap;
+use Avalanche\Bundle\SitemapBundle\Sitemap;
 
 class SitemapController
 {

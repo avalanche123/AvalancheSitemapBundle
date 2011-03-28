@@ -1,11 +1,11 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Command;
+namespace Avalanche\Bundle\SitemapBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Bundle\FrameworkBundle\Command\Command;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Provider;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Provider;
 
 class GenerateCommand extends Command
 {

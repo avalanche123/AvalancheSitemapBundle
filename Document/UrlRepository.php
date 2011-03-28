@@ -1,10 +1,10 @@
 <?php
 
-namespace Bundle\Avalanche\SitemapBundle\Document;
+namespace Avalanche\Bundle\SitemapBundle\Document;
 
 use Doctrine\ODM\MongoDB\DocumentRepository;
-use Bundle\Avalanche\SitemapBundle\Sitemap\Url;
-use Bundle\Avalanche\SitemapBundle\Sitemap\UrlRepositoryInterface;
+use Avalanche\Bundle\SitemapBundle\Sitemap\Url;
+use Avalanche\Bundle\SitemapBundle\Sitemap\UrlRepositoryInterface;
 
 class UrlRepository extends DocumentRepository implements UrlRepositoryInterface
 {
