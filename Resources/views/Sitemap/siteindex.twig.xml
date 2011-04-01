@@ -4,7 +4,7 @@
          xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {% for i in 1 .. pages %}
     <sitemap>
-        {% include "AvalancheSitemapBundle:Sitemap:sitemap_url.twig.xml" with { 'page': loop.index } %}
+        {% include "AvalancheSitemap:Sitemap:sitemap_url.twig.xml" with { 'page': loop.index } %}
     </sitemap>
 {% endfor %}
 </sitemapindex>

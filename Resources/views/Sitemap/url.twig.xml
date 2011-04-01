@@ -11,7 +11,7 @@
 {% if url.images is defined %}
 {% for image in url.images %}
 <image:image>
-    {% include "AvalancheSitemapBundle:Sitemap:image.twig.xml" with { 'image': image } %}
+    {% include "AvalancheSitemap:Sitemap:image.twig.xml" with { 'image': image } %}
 </image:image>
 {% endfor %}
 {% endif %}

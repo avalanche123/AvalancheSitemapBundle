@@ -25,14 +25,14 @@ class SitemapController
 
         $this->sitemap->setPage($page);
 
-        return $this->templating->renderResponse('AvalancheSitemapBundle:Sitemap:sitemap.twig.xml', array(
+        return $this->templating->renderResponse('AvalancheSitemap:Sitemap:sitemap.twig.xml', array(
             'sitemap' => $this->sitemap
         ));
     }
 
     public function siteindex()
     {
-        return $this->templating->renderResponse('AvalancheSitemapBundle:Sitemap:siteindex.twig.xml', array(
+        return $this->templating->renderResponse('AvalancheSitemap:Sitemap:siteindex.twig.xml', array(
             'pages'   => $this->sitemap->pages(),
             'sitemap' => $this->sitemap,
         ));

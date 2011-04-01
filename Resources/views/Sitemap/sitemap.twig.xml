@@ -6,7 +6,7 @@
          xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 {% for url in sitemap.all %}
     <url>
-        {% include "AvalancheSitemapBundle:Sitemap:url.twig.xml" with { 'url': url } %}
+        {% include "AvalancheSitemap:Sitemap:url.twig.xml" with { 'url': url } %}
     </url>
 {% endfor %}
 </urlset>
