@@ -4,10 +4,10 @@ namespace Avalanche\Bundle\SitemapBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Bundle\FrameworkBundle\Command\Command;
+use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Avalanche\Bundle\SitemapBundle\Sitemap\Provider;
 
-class GenerateCommand extends Command
+class GenerateCommand extends ContainerAwareCommand
 {
     protected function configure()
     {
@@ -17,9 +17,9 @@ class GenerateCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $sitemap = $this->container->get('sitemap');
+        $sitemap = $this->getContainer()->get('sitemap');
 
-        $this->container->get('sitemap.provider.chain')->populate($sitemap);
+        $this->getContainer()->get('sitemap.provider.chain')->populate($sitemap);
 
         $output->write('<info>Sitemap was sucessfully populated!</info>', true);
     }
