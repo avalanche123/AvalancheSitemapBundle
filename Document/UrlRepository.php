@@ -48,7 +48,7 @@ class UrlRepository extends DocumentRepository implements UrlRepositoryInterface
 
     public function flush()
     {
-        $this->dm->flush(array('safe' => true));
+        $this->dm->flush();
         $this->cleanup();
     }
 
