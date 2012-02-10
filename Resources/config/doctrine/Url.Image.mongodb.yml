@@ -1,5 +1,7 @@
 Avalanche\Bundle\SitemapBundle\Sitemap\Url\Image:
     type: embeddedDocument
+    indexes:
+        - { keys: { loc: 1 }, options: {} }
     fields:
         loc:
             type: string
