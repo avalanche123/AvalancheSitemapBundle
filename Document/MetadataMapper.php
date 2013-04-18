@@ -25,7 +25,7 @@ class MetadataMapper
             return;
         }
 
-        $metadata->db         = $this->database;
-        $metadata->collection = $this->collection;
+        $metadata->setDatabase($this->database);
+        $metadata->setCollection($this->collection);
     }
 }
