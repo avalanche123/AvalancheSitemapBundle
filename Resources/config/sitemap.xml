@@ -30,7 +30,7 @@
             <argument>%sitemap.url.class%</argument>
         </service>
         <service id="sitemap.url.mapper" class="%sitemap.url.mapper.class%">
-            <tag name="doctrine.odm.mongodb.default_event_listener" event="loadClassMetadata" />
+            <tag name="doctrine_mongodb.odm.event_listener" event="loadClassMetadata" />
             <argument>%sitemap.mongodb.collection%</argument>
             <argument>%sitemap.mongodb.database%</argument>
             <argument>%sitemap.url.class%</argument>
